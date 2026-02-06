@@ -1,3 +1,5 @@
+# Date/Time: 2026-02-06 / 19:22 (Moscow)
+# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 vless://4603e54d-b023-4947-83e7-70025416f306@212.111.84.187:51102?security=reality&encryption=none&pbk=Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=m.vk.ru&sid=8f222b3475800821#🇵🇱[openproxylist.com] vless-PL
 vless://d6b1327d-2bec-4366-a3a1-9b1284f95841@138.124.79.9:443?security=reality&type=tcp&sni=sun6-21.userapi.com&fp=chrome&flow=xtls-rprx-vision&sid=6ba85179e30d4fc2&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc#🇫🇷[openproxylist.com] vless-FR
 vless://87015ceb-1c85-5a7d-870b-3c364d353220@v622430.hosted-by-vdsina.com:8443?security=reality&encryption=none&pbk=Sd63O6tE_u3jaGbl5fB30NgDIWzyrixLWrNQ2_ryFQs&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=sun6-21.userapi.com&sid=ffffffffff#🇳🇱[openproxylist.com] vless-NL
@@ -1936,8 +1938,6 @@ vless://f81e82c8-eb5e-42bd-bd1b-29aa4613377f@109.120.190.193:4443?type=tcp&secur
 vless://1ceceebd-5478-4b98-9839-6e25beb9546b@51.250.93.16:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0&security=reality&sni=ads.x5.ru&type=tcp#1755.%20VLESS%20%7C%20TG%3A%20%40wlrustg
 vless://1ceceebd-5478-4b98-9839-6e25beb9546b@51.250.93.16:8443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=0a3d38cwnQfUM7EqjEinf1XUZyKdzgiuRMayO3LcYl0&security=reality&sni=tele2.ru&type=tcp#1756.%20VLESS%20%7C%20TG%3A%20%40wlrustg
 vless://e08f1ad7-0c60-446d-baec-08b3b69bb3d0@195.209.81.182:80?encryption=none&path=%2FgetWorkerUpdates&security=none&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23306%20%5BVerified%20RU%5D
-# Date/Time: 2026-02-06 / 19:22 (Moscow)
-# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 vless://88395261-261c-4956-a2dc-16932a181ca4@178.154.224.33:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=random&pbk=66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0&sid=3c1523da43287ec4&sni=ads.x5.ru&path=&host=&spx=/#%F0%9F%87%A6%F0%9F%87%B9%20Austria%20%5B%2ACIDR%5D%20YA
 vless://e4f5077b-3628-450c-92f9-b129b8a641a7@84.201.128.76:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0&security=reality&sid=3c1523da43287ec4&sni=smartcaptcha.yandexcloud.net&type=tcp#%F0%9F%87%A6%F0%9F%87%B9%20Austria%20%5B%2ACIDR%5D%20YA
 vless://0a27acbc-64e5-4b23-96c5-9fc349b4e9f6@178.154.224.33:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=random&pbk=66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0&sid=3c1523da43287ec4&sni=ads.x5.ru&path=&host=&spx=/#%F0%9F%87%A6%F0%9F%87%B9%20Austria%20%5B%2ACIDR%5D%20YA

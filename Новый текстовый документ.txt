@@ -1,0 +1,3923 @@
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.1",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "test.country-11.mail-thba.com",
+          "kz2.fastdbn.com",
+          "test.country-56.mail-thba.com",
+          "test.country-43.mail-thba.com",
+          "fin1.fastdbn.com",
+          "fi3.nerpvpn.net",
+          "se.srv.cdnopl.link",
+          "hungary.mail-thba.com",
+          "devdsmain.fgnconnection.life",
+          "spb.ru.srv.rucdn.link",
+          "nlg2.fastdbn.com",
+          "pln6.fastdbn.com",
+          "test.country-35.mail-thba.com",
+          "fin2.fastdbn.com",
+          "dev.fastdbn.com",
+          "est-0001-xr.packet-drop-society.net",
+          "nl03-vlr01.tcp-reset-club.net",
+          "nl2.fastdbn.com",
+          "rumain.fgnconnection.life",
+          "pln8.fastdbn.com",
+          "pl.fastdbn.com",
+          "ru-nl01-vlr01.tcp-reset-club.net",
+          "test.country-39.mail-thba.com",
+          "fin.top.subtrust.ru",
+          "lv.fastdbn.com",
+          "pln3.fastdbn.com",
+          "pln7.fastdbn.com",
+          "ytn.sbrf-cdn342.ru",
+          "fi.srv.cdnopl.link",
+          "cloud.mail-thba.com",
+          "test.country-80.mail-thba.com",
+          "nlnof11.fastdbn.com",
+          "ee2.srv.oplcdn.link",
+          "ru2.nerpvpn.net",
+          "lv5.fastdbn.com",
+          "country-ros.mail-thba.com",
+          "msk.ru.srv.rucdn.link",
+          "est.top.subtrust.ru",
+          "fing.fastdbn.com",
+          "fin-0001-xr.packet-drop-society.net",
+          "game-sw2.mail-thba.com",
+          "detx1.fastdbn.com",
+          "fin4.fastdbn.com",
+          "nltw1.fastdbn.com",
+          "pln1.fastdbn.com",
+          "game-sw.mail-thba.com",
+          "test.country-33.mail-thba.com",
+          "test.country-38.mail-thba.com",
+          "kzmain.fgnconnection.life",
+          "pol01-rblx01.tcp-reset-club.net",
+          "sing2.fastdbn.com",
+          "pkyooug2.fastlydeb.com",
+          "test.country-32.mail-thba.com",
+          "test.country-16.mail-thba.com",
+          "gongmain.fgnconnection.life",
+          "lv3.fastdbn.com",
+          "sw1.fgnconnection.life",
+          "youg.fastdbn.com",
+          "de14.fgnconnection.life",
+          "estmain.fgnconnection.life",
+          "est01-vlr01.tcp-reset-club.net",
+          "nlg1.fastdbn.com",
+          "pln2.fastdbn.com",
+          "test.country-41.mail-thba.com",
+          "test.country-10.mail-thba.com",
+          "nlc3g.fastdbn.com",
+          "nld-0001-xr.packet-drop-society.net",
+          "fi4.srv.cdnopl.link",
+          "jp3.fastdbn.com",
+          "pln4.fastdbn.com",
+          "pln5.fastdbn.com",
+          "test.country-7.mail-thba.com",
+          "test.country-95.mail-thba.com",
+          "frmain.fgnconnection.life",
+          "isr.fastdbn.com",
+          "pol01-vls01.tcp-reset-club.net",
+          "kz.fastdbn.com",
+          "test.country-85.mail-thba.com",
+          "finv1.fastdbn.com",
+          "fi3.srv.cdnopl.link",
+          "test.country-4.mail-thba.com",
+          "nltw2.fastdbn.com",
+          "nsk.ru.srv.rucdn.link",
+          "fin3.fastdbn.com",
+          "test.country-17.mail-thba.com",
+          "us2.fastdbn.com",
+          "test.country-57.mail-thba.com",
+          "nlmain.fgnconnection.life",
+          "fin5.fastdbn.com",
+          "trmain.fgnconnection.life",
+          "usav2.fastdbn.com",
+          "test.country-40.mail-thba.com",
+          "ba.srv.oplcdn.top",
+          "test.country-18.mail-thba.com",
+          "test.country-3.mail-thba.com",
+          "che01-plr-vlr01.tcp-reset-club.net",
+          "test.country-42.mail-thba.com",
+          "lv2.fastdbn.com",
+          "nl04-vlr01.tcp-reset-club.net",
+          "us01-gmn-vlr02.tcp-reset-club.net",
+          "alb.fastdbn.com",
+          "ee.srv.cdnopl.link",
+          "lv4.fastdbn.com",
+          "test.country-34.mail-thba.com",
+          "ltei.nerpvpn.net",
+          "kzsl.fastdbn.com",
+          "us01-gmn-vlr01.tcp-reset-club.net",
+          "test.country-36.mail-thba.com",
+          "fimain.fgnconnection.life",
+          "frx.fastdbn.com",
+          "test.country-8.mail-thba.com",
+          "usmain.fgnconnection.life",
+          "nl02-vlr01.tcp-reset-club.net",
+          "tf.fastdbn.com",
+          "camain.fgnconnection.life",
+          "test.country-19.mail-thba.com",
+          "ltmain.fgnconnection.life",
+          "usa-0001-gmn01.packet-drop-society.net",
+          "testfast.country-1.mail-thba.com",
+          "sp4.fastdbn.com",
+          "test.country-48.mail-thba.com",
+          "fr01-vlr01.tcp-reset-club.net",
+          "ru02-vlr01.tcp-reset-club.net"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      },
+      {
+        "rule_set": [
+          "geoip-ru",
+          "geosite-ru"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.147.22",
+        "104.17.148.22",
+        "104.18.1.48",
+        "104.18.0.48"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 12334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "📱 Антиблок 405 | AI § 0",
+        "📱 Антиблок 406 | AI § 1",
+        "📱 Антиблок 406 | AI (2) § 2",
+        "📱 Антиблок 406 | AI (3) § 3",
+        "📱 Антиблок 407 | AI, Fast, Test § 4",
+        "📱 Антиблок 409 | AI, Social § 5",
+        "📱 Антиблок 410 | AI, Social, Test § 6",
+        "📱 Антиблок 411 | AI, Social, Test § 7",
+        "📱 Антиблок 412 | AI, Test § 8",
+        "📱 Антиблок 413 | AI, Test § 9",
+        "📱 Антиблок 414 | AI, Test § 10",
+        "📱 Антиблок 415 | AI, Test § 11",
+        "📱 Антиблок 416 | AI, Test § 12",
+        "📱 Антиблок 417 | AI, Test § 13",
+        "📱 Антиблок 418 | AI, Test § 14",
+        "📱 Антиблок 419 | AI, Test § 15",
+        "📱 Антиблок 420 | AI, Test § 16",
+        "📱 Антиблок 421 | AI, Test § 17",
+        "📱 Антиблок 422 | AI, Test § 18",
+        "📱 Антиблок 423 | AI, Test § 19",
+        "📱 Антиблок 424 | AI, Test § 20",
+        "📱 Антиблок 425 | AI, Test § 21",
+        "📱 Антиблок 59 | Fast | 🚀 1078 Mbps § 22",
+        "📱 Антиблок 60 | Fast | 🚀 710 Mbps § 23",
+        "📱 Антиблок 79 | Fast, T2 | 🚀 796 Mbps § 24",
+        "📱 Антиблок 390 | Gaming § 25",
+        "🇦🇱 Албания 141 | Fast | 🚀 589 Mbps § 26",
+        "🇧🇦 Босния 3 | NoAds, YouTube | 🚀 480 Mbps § 27",
+        "🇨🇦 Канада 4 | AI | 🚀 507 Mbps § 28",
+        "🇨🇭 Швейцария 5 | Fast | 🚀 612 Mbps § 29",
+        "🇩🇪 Германия 382 | AI, Fast, Social, Test § 30",
+        "🇩🇪 Германия 233 | AI, Social | 🚀 262 Mbps § 31",
+        "🇩🇪 Германия 150 | Fast | 🚀 700 Mbps § 32",
+        "🇩🇪 Германия 149 | Fast | 🚀 763 Mbps (2) § 33",
+        "🇩🇪 Германия 384 | Fast § 34",
+        "🇩🇪 Германия 327 | Fast | 🚀 733 Mbps § 35",
+        "🇩🇪 Германия 358 | Fast § 36",
+        "🇩🇪 Германия 220 | Fast, NoAds, YouTube | 🚀 771 Mbps § 37",
+        "🇩🇪 Германия 221 | Fast, NoAds, YouTube | 🚀 668 Mbps § 38",
+        "🇩🇪 Германия 326 | Gaming | 🚀 809 Mbps § 39",
+        "🇩🇪 Германия 223 | Gaming, Social § 40",
+        "🇩🇪 Германия 222 | NoAds, YouTube | 🚀 645 Mbps § 41",
+        "🇩🇪 Германия 157 | NoAds, YouTube | 🚀 518 Mbps § 42",
+        "🇩🇪 Германия 331 | YouTube § 43",
+        "🇪🇪 Эстония 9 | AI | 🚀 680 Mbps § 44",
+        "🇪🇪 Эстония 252 | AI, Social, Test § 45",
+        "🇪🇪 Эстония 253 | Fast, NoAds § 46",
+        "🇪🇪 Эстония 254 | Fast, NoAds, YouTube § 47",
+        "🇪🇪 Эстония 11 | Fast, Torrents | 🚀 672 Mbps § 48",
+        "🇪🇪 Эстония 3 | Fast, Torrents | 🚀 862 Mbps § 49",
+        "🇪🇪 Эстония 248 | Gaming | 🚀 593 Mbps § 50",
+        "🇪🇪 Эстония 10 | NoAds, YouTube | 🚀 874 Mbps § 51",
+        "🇪🇸 Испания 2 | AI, Fast | 🚀 570 Mbps § 52",
+        "🇪🇸 Испания 8 | AI, Social § 53",
+        "🇫🇮 Финляндия 103 | AI | 🚀 674 Mbps § 54",
+        "🇫🇮 Финляндия 281 | AI, Social, Test § 55",
+        "🇫🇮 Финляндия 5 | Fast | 🚀 714 Mbps § 56",
+        "🇫🇮 Финляндия 6 | Fast | 🚀 827 Mbps § 57",
+        "🇫🇮 Финляндия 7 | Fast | 🚀 728 Mbps § 58",
+        "🇫🇮 Финляндия 8 | Fast | 🚀 578 Mbps § 59",
+        "🇫🇮 Финляндия 9 | Fast | 🚀 668 Mbps § 60",
+        "🇫🇮 Финляндия 10 | Fast | 🚀 792 Mbps § 61",
+        "🇫🇮 Финляндия 11 | Fast | 🚀 791 Mbps § 62",
+        "🇫🇮 Финляндия 104 | Fast | 🚀 789 Mbps § 63",
+        "🇫🇮 Финляндия 105 | Fast | 🚀 771 Mbps § 64",
+        "🇫🇮 Финляндия 277 | Fast § 65",
+        "🇫🇮 Финляндия 283 | Fast, NoAds § 66",
+        "🇫🇮 Финляндия 105 | Fast, NoAds, YouTube | 🚀 771 Mbps § 67",
+        "🇫🇮 Финляндия 226 | Fast, NoAds, YouTube | 🚀 798 Mbps § 68",
+        "🇫🇮 Финляндия 105 | Fast, Test | 🚀 771 Mbps § 69",
+        "🇫🇮 Финляндия 104 | Fast, Test | 🚀 789 Mbps § 70",
+        "🇫🇮 Финляндия 84 | Fast, Torrents | 🚀 755 Mbps § 71",
+        "🇫🇮 Финляндия 227 | NoAds, YouTube | 🚀 890 Mbps § 72",
+        "🇫🇷 Франция 27 | AI | 🚀 545 Mbps § 73",
+        "🇫🇷 Франция 41 | AI, Fast, Test § 74",
+        "🇫🇷 Франция 15 | Fast | 🚀 664 Mbps § 75",
+        "🇫🇷 Франция 28 | Fast, Torrents § 76",
+        "🇬🇧 Англия 14 | AI, Fast, Test § 77",
+        "🇭🇰 Гонконг 6 | AI | 🚀 523 Mbps § 78",
+        "🇮🇱 Израиль 2 | Fast | 🚀 836 Mbps § 79",
+        "🇯🇵 Япония 8 | Fast | 🚀 419 Mbps § 80",
+        "🇰🇿 Казахстан 17 | AI | 🚀 583 Mbps § 81",
+        "🇰🇿 Казахстан 41 | AI, Fast, Test § 82",
+        "🇱🇻 Латвия 25 | AI | 🚀 782 Mbps § 83",
+        "🇱🇻 Латвия 8 | Fast | 🚀 868 Mbps § 84",
+        "🇱🇻 Латвия 9 | Fast | 🚀 733 Mbps § 85",
+        "🇱🇻 Латвия 10 | Fast | 🚀 847 Mbps § 86",
+        "🇱🇻 Латвия 11 | Fast | 🚀 780 Mbps § 87",
+        "🇱🇻 Латвия 12 | Fast | 🚀 639 Mbps § 88",
+        "🇱🇻 Латвия 27 | Fast | 🚀 514 Mbps § 89",
+        "🇳🇱 Нидерланды 373 | AI, Fast, Test § 90",
+        "🇳🇱 Нидерланды 190 | AI, Social | 🚀 778 Mbps § 91",
+        "🇳🇱 Нидерланды 141 | Fast | 🚀 631 Mbps § 92",
+        "🇳🇱 Нидерланды 142 | Fast | 🚀 451 Mbps § 93",
+        "🇳🇱 Нидерланды 145 | Fast | 🚀 589 Mbps § 94",
+        "🇳🇱 Нидерланды 233 | Fast, Gaming, IPv6 | 🚀 304 Mbps § 95",
+        "🇳🇱 Нидерланды 147 | Fast, IPv6 | 🚀 513 Mbps § 96",
+        "🇳🇱 Нидерланды 242 | Fast, Torrents, YouTube | 🚀 450 Mbps § 97",
+        "🇳🇱 Нидерланды 243 | Fast, Torrents, YouTube | 🚀 586 Mbps § 98",
+        "🇳🇱 Нидерланды 150 | Fast, Torrents, YouTube | 🚀 847 Mbps § 99",
+        "🇳🇱 Нидерланды 225 | NoAds, YouTube | 🚀 706 Mbps § 100",
+        "🇵🇱 Польша 141 | Fast | 🚀 895 Mbps § 101",
+        "🇵🇱 Польша 142 | Fast | 🚀 676 Mbps § 102",
+        "🇵🇱 Польша 143 | Fast | 🚀 607 Mbps § 103",
+        "🇵🇱 Польша 144 | Fast | 🚀 694 Mbps § 104",
+        "🇵🇱 Польша 145 | Fast | 🚀 711 Mbps § 105",
+        "🇵🇱 Польша 146 | Fast | 🚀 665 Mbps § 106",
+        "🇵🇱 Польша 147 | Fast | 🚀 344 Mbps § 107",
+        "🇵🇱 Польша 148 | Fast | 🚀 783 Mbps § 108",
+        "🇵🇱 Польша 149 | Fast | 🚀 667 Mbps § 109",
+        "🇵🇱 Польша 12 | Fast, IPv6, Torrents | 🚀 562 Mbps § 110",
+        "🇵🇱 Польша 267 | Fast, Torrents § 111",
+        "🇵🇱 Польша 244 | Gaming | 🚀 495 Mbps § 112",
+        "🇷🇺 Россия 196 | AI, NoAds, Social, YouTube | 🚀 769 Mbps § 113",
+        "🇷🇺 Россия 388 | AI, Social, Test § 114",
+        "🇷🇺 Россия 221 | Fast, NoAds, YouTube | 🚀 668 Mbps § 115",
+        "🇷🇺 Россия 325 | Gaming | 🚀 804 Mbps § 116",
+        "🇷🇺 Россия 224 | Gaming, SS | 🚀 321 Mbps § 117",
+        "🇷🇺 Россия 383 | NoAds, YouTube § 118",
+        "🇷🇺 Россия 156 | NoAds, YouTube | 🚀 671 Mbps § 119",
+        "🇷🇺 Россия 389 | SS, Torrents, YouTube § 120",
+        "🇸🇪 Швеция 177 | AI | 🚀 717 Mbps § 121",
+        "🇸🇪 Швеция 320 | AI, Fast, Gaming § 122",
+        "🇸🇪 Швеция 321 | AI, Fast, Gaming § 123",
+        "🇸🇪 Швеция 322 | AI, Social, Test § 124",
+        "🇸🇪 Швеция 225 | Fast, NoAds, YouTube | 🚀 821 Mbps § 125",
+        "🇸🇬 Сингапур 2 | Fast | 🚀 897 Mbps § 126",
+        "🇹🇷 Турция 183 | AI | 🚀 535 Mbps § 127",
+        "🇹🇷 Турция 252 | AI, Fast, Gaming, Test § 128",
+        "🇹🇷 Турция 253 | AI, Fast, Test § 129",
+        "🇺🇸 США 181 | AI | 🚀 454 Mbps § 130",
+        "🇺🇸 США 171 | AI | 🚀 595 Mbps § 131",
+        "🇺🇸 США 180 | AI | 🚀 618 Mbps § 132",
+        "🇺🇸 США 372 | AI, Fast, Test § 133",
+        "🇺🇸 США 182 | AI, Torrents | 🚀 588 Mbps § 134",
+        "🇺🇸 США 5 | Fast | 🚀 714 Mbps § 135",
+        "🇺🇸 США 148 | Fast | 🚀 671 Mbps § 136",
+        "🇺🇸 США 149 | Fast | 🚀 520 Mbps § 137",
+        "🇺🇸 США 150 | Fast | 🚀 845 Mbps § 138",
+        "🇺🇸 США 151 | Fast | 🚀 680 Mbps § 139",
+        "🇺🇸 США 153 | Fast | 🚀 591 Mbps § 140",
+        "🇺🇸 США 154 | Fast, NoAds, YouTube | 🚀 634 Mbps § 141",
+        "🇺🇸 США 79 | Fast, NoAds, YouTube | 🚀 796 Mbps § 142",
+        "🇺🇸 США 155 | Fast, NoAds, YouTube | 🚀 782 Mbps § 143",
+        "🇺🇸 США 156 | Fast, Torrents, YouTube | 🚀 716 Mbps § 144",
+        "🇺🇸 США 157 | NoAds, YouTube | 🚀 518 Mbps § 145"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "📱 Антиблок 405 | AI § 0",
+        "📱 Антиблок 406 | AI § 1",
+        "📱 Антиблок 406 | AI (2) § 2",
+        "📱 Антиблок 406 | AI (3) § 3",
+        "📱 Антиблок 407 | AI, Fast, Test § 4",
+        "📱 Антиблок 409 | AI, Social § 5",
+        "📱 Антиблок 410 | AI, Social, Test § 6",
+        "📱 Антиблок 411 | AI, Social, Test § 7",
+        "📱 Антиблок 412 | AI, Test § 8",
+        "📱 Антиблок 413 | AI, Test § 9",
+        "📱 Антиблок 414 | AI, Test § 10",
+        "📱 Антиблок 415 | AI, Test § 11",
+        "📱 Антиблок 416 | AI, Test § 12",
+        "📱 Антиблок 417 | AI, Test § 13",
+        "📱 Антиблок 418 | AI, Test § 14",
+        "📱 Антиблок 419 | AI, Test § 15",
+        "📱 Антиблок 420 | AI, Test § 16",
+        "📱 Антиблок 421 | AI, Test § 17",
+        "📱 Антиблок 422 | AI, Test § 18",
+        "📱 Антиблок 423 | AI, Test § 19",
+        "📱 Антиблок 424 | AI, Test § 20",
+        "📱 Антиблок 425 | AI, Test § 21",
+        "📱 Антиблок 59 | Fast | 🚀 1078 Mbps § 22",
+        "📱 Антиблок 60 | Fast | 🚀 710 Mbps § 23",
+        "📱 Антиблок 79 | Fast, T2 | 🚀 796 Mbps § 24",
+        "📱 Антиблок 390 | Gaming § 25",
+        "🇦🇱 Албания 141 | Fast | 🚀 589 Mbps § 26",
+        "🇧🇦 Босния 3 | NoAds, YouTube | 🚀 480 Mbps § 27",
+        "🇨🇦 Канада 4 | AI | 🚀 507 Mbps § 28",
+        "🇨🇭 Швейцария 5 | Fast | 🚀 612 Mbps § 29",
+        "🇩🇪 Германия 382 | AI, Fast, Social, Test § 30",
+        "🇩🇪 Германия 233 | AI, Social | 🚀 262 Mbps § 31",
+        "🇩🇪 Германия 150 | Fast | 🚀 700 Mbps § 32",
+        "🇩🇪 Германия 149 | Fast | 🚀 763 Mbps (2) § 33",
+        "🇩🇪 Германия 384 | Fast § 34",
+        "🇩🇪 Германия 327 | Fast | 🚀 733 Mbps § 35",
+        "🇩🇪 Германия 358 | Fast § 36",
+        "🇩🇪 Германия 220 | Fast, NoAds, YouTube | 🚀 771 Mbps § 37",
+        "🇩🇪 Германия 221 | Fast, NoAds, YouTube | 🚀 668 Mbps § 38",
+        "🇩🇪 Германия 326 | Gaming | 🚀 809 Mbps § 39",
+        "🇩🇪 Германия 223 | Gaming, Social § 40",
+        "🇩🇪 Германия 222 | NoAds, YouTube | 🚀 645 Mbps § 41",
+        "🇩🇪 Германия 157 | NoAds, YouTube | 🚀 518 Mbps § 42",
+        "🇩🇪 Германия 331 | YouTube § 43",
+        "🇪🇪 Эстония 9 | AI | 🚀 680 Mbps § 44",
+        "🇪🇪 Эстония 252 | AI, Social, Test § 45",
+        "🇪🇪 Эстония 253 | Fast, NoAds § 46",
+        "🇪🇪 Эстония 254 | Fast, NoAds, YouTube § 47",
+        "🇪🇪 Эстония 11 | Fast, Torrents | 🚀 672 Mbps § 48",
+        "🇪🇪 Эстония 3 | Fast, Torrents | 🚀 862 Mbps § 49",
+        "🇪🇪 Эстония 248 | Gaming | 🚀 593 Mbps § 50",
+        "🇪🇪 Эстония 10 | NoAds, YouTube | 🚀 874 Mbps § 51",
+        "🇪🇸 Испания 2 | AI, Fast | 🚀 570 Mbps § 52",
+        "🇪🇸 Испания 8 | AI, Social § 53",
+        "🇫🇮 Финляндия 103 | AI | 🚀 674 Mbps § 54",
+        "🇫🇮 Финляндия 281 | AI, Social, Test § 55",
+        "🇫🇮 Финляндия 5 | Fast | 🚀 714 Mbps § 56",
+        "🇫🇮 Финляндия 6 | Fast | 🚀 827 Mbps § 57",
+        "🇫🇮 Финляндия 7 | Fast | 🚀 728 Mbps § 58",
+        "🇫🇮 Финляндия 8 | Fast | 🚀 578 Mbps § 59",
+        "🇫🇮 Финляндия 9 | Fast | 🚀 668 Mbps § 60",
+        "🇫🇮 Финляндия 10 | Fast | 🚀 792 Mbps § 61",
+        "🇫🇮 Финляндия 11 | Fast | 🚀 791 Mbps § 62",
+        "🇫🇮 Финляндия 104 | Fast | 🚀 789 Mbps § 63",
+        "🇫🇮 Финляндия 105 | Fast | 🚀 771 Mbps § 64",
+        "🇫🇮 Финляндия 277 | Fast § 65",
+        "🇫🇮 Финляндия 283 | Fast, NoAds § 66",
+        "🇫🇮 Финляндия 105 | Fast, NoAds, YouTube | 🚀 771 Mbps § 67",
+        "🇫🇮 Финляндия 226 | Fast, NoAds, YouTube | 🚀 798 Mbps § 68",
+        "🇫🇮 Финляндия 105 | Fast, Test | 🚀 771 Mbps § 69",
+        "🇫🇮 Финляндия 104 | Fast, Test | 🚀 789 Mbps § 70",
+        "🇫🇮 Финляндия 84 | Fast, Torrents | 🚀 755 Mbps § 71",
+        "🇫🇮 Финляндия 227 | NoAds, YouTube | 🚀 890 Mbps § 72",
+        "🇫🇷 Франция 27 | AI | 🚀 545 Mbps § 73",
+        "🇫🇷 Франция 41 | AI, Fast, Test § 74",
+        "🇫🇷 Франция 15 | Fast | 🚀 664 Mbps § 75",
+        "🇫🇷 Франция 28 | Fast, Torrents § 76",
+        "🇬🇧 Англия 14 | AI, Fast, Test § 77",
+        "🇭🇰 Гонконг 6 | AI | 🚀 523 Mbps § 78",
+        "🇮🇱 Израиль 2 | Fast | 🚀 836 Mbps § 79",
+        "🇯🇵 Япония 8 | Fast | 🚀 419 Mbps § 80",
+        "🇰🇿 Казахстан 17 | AI | 🚀 583 Mbps § 81",
+        "🇰🇿 Казахстан 41 | AI, Fast, Test § 82",
+        "🇱🇻 Латвия 25 | AI | 🚀 782 Mbps § 83",
+        "🇱🇻 Латвия 8 | Fast | 🚀 868 Mbps § 84",
+        "🇱🇻 Латвия 9 | Fast | 🚀 733 Mbps § 85",
+        "🇱🇻 Латвия 10 | Fast | 🚀 847 Mbps § 86",
+        "🇱🇻 Латвия 11 | Fast | 🚀 780 Mbps § 87",
+        "🇱🇻 Латвия 12 | Fast | 🚀 639 Mbps § 88",
+        "🇱🇻 Латвия 27 | Fast | 🚀 514 Mbps § 89",
+        "🇳🇱 Нидерланды 373 | AI, Fast, Test § 90",
+        "🇳🇱 Нидерланды 190 | AI, Social | 🚀 778 Mbps § 91",
+        "🇳🇱 Нидерланды 141 | Fast | 🚀 631 Mbps § 92",
+        "🇳🇱 Нидерланды 142 | Fast | 🚀 451 Mbps § 93",
+        "🇳🇱 Нидерланды 145 | Fast | 🚀 589 Mbps § 94",
+        "🇳🇱 Нидерланды 233 | Fast, Gaming, IPv6 | 🚀 304 Mbps § 95",
+        "🇳🇱 Нидерланды 147 | Fast, IPv6 | 🚀 513 Mbps § 96",
+        "🇳🇱 Нидерланды 242 | Fast, Torrents, YouTube | 🚀 450 Mbps § 97",
+        "🇳🇱 Нидерланды 243 | Fast, Torrents, YouTube | 🚀 586 Mbps § 98",
+        "🇳🇱 Нидерланды 150 | Fast, Torrents, YouTube | 🚀 847 Mbps § 99",
+        "🇳🇱 Нидерланды 225 | NoAds, YouTube | 🚀 706 Mbps § 100",
+        "🇵🇱 Польша 141 | Fast | 🚀 895 Mbps § 101",
+        "🇵🇱 Польша 142 | Fast | 🚀 676 Mbps § 102",
+        "🇵🇱 Польша 143 | Fast | 🚀 607 Mbps § 103",
+        "🇵🇱 Польша 144 | Fast | 🚀 694 Mbps § 104",
+        "🇵🇱 Польша 145 | Fast | 🚀 711 Mbps § 105",
+        "🇵🇱 Польша 146 | Fast | 🚀 665 Mbps § 106",
+        "🇵🇱 Польша 147 | Fast | 🚀 344 Mbps § 107",
+        "🇵🇱 Польша 148 | Fast | 🚀 783 Mbps § 108",
+        "🇵🇱 Польша 149 | Fast | 🚀 667 Mbps § 109",
+        "🇵🇱 Польша 12 | Fast, IPv6, Torrents | 🚀 562 Mbps § 110",
+        "🇵🇱 Польша 267 | Fast, Torrents § 111",
+        "🇵🇱 Польша 244 | Gaming | 🚀 495 Mbps § 112",
+        "🇷🇺 Россия 196 | AI, NoAds, Social, YouTube | 🚀 769 Mbps § 113",
+        "🇷🇺 Россия 388 | AI, Social, Test § 114",
+        "🇷🇺 Россия 221 | Fast, NoAds, YouTube | 🚀 668 Mbps § 115",
+        "🇷🇺 Россия 325 | Gaming | 🚀 804 Mbps § 116",
+        "🇷🇺 Россия 224 | Gaming, SS | 🚀 321 Mbps § 117",
+        "🇷🇺 Россия 383 | NoAds, YouTube § 118",
+        "🇷🇺 Россия 156 | NoAds, YouTube | 🚀 671 Mbps § 119",
+        "🇷🇺 Россия 389 | SS, Torrents, YouTube § 120",
+        "🇸🇪 Швеция 177 | AI | 🚀 717 Mbps § 121",
+        "🇸🇪 Швеция 320 | AI, Fast, Gaming § 122",
+        "🇸🇪 Швеция 321 | AI, Fast, Gaming § 123",
+        "🇸🇪 Швеция 322 | AI, Social, Test § 124",
+        "🇸🇪 Швеция 225 | Fast, NoAds, YouTube | 🚀 821 Mbps § 125",
+        "🇸🇬 Сингапур 2 | Fast | 🚀 897 Mbps § 126",
+        "🇹🇷 Турция 183 | AI | 🚀 535 Mbps § 127",
+        "🇹🇷 Турция 252 | AI, Fast, Gaming, Test § 128",
+        "🇹🇷 Турция 253 | AI, Fast, Test § 129",
+        "🇺🇸 США 181 | AI | 🚀 454 Mbps § 130",
+        "🇺🇸 США 171 | AI | 🚀 595 Mbps § 131",
+        "🇺🇸 США 180 | AI | 🚀 618 Mbps § 132",
+        "🇺🇸 США 372 | AI, Fast, Test § 133",
+        "🇺🇸 США 182 | AI, Torrents | 🚀 588 Mbps § 134",
+        "🇺🇸 США 5 | Fast | 🚀 714 Mbps § 135",
+        "🇺🇸 США 148 | Fast | 🚀 671 Mbps § 136",
+        "🇺🇸 США 149 | Fast | 🚀 520 Mbps § 137",
+        "🇺🇸 США 150 | Fast | 🚀 845 Mbps § 138",
+        "🇺🇸 США 151 | Fast | 🚀 680 Mbps § 139",
+        "🇺🇸 США 153 | Fast | 🚀 591 Mbps § 140",
+        "🇺🇸 США 154 | Fast, NoAds, YouTube | 🚀 634 Mbps § 141",
+        "🇺🇸 США 79 | Fast, NoAds, YouTube | 🚀 796 Mbps § 142",
+        "🇺🇸 США 155 | Fast, NoAds, YouTube | 🚀 782 Mbps § 143",
+        "🇺🇸 США 156 | Fast, Torrents, YouTube | 🚀 716 Mbps § 144",
+        "🇺🇸 США 157 | NoAds, YouTube | 🚀 518 Mbps § 145"
+      ],
+      "url": "https://t.me",
+      "interval": "10m0s",
+      "idle_timeout": "1h40m0s"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 405 | AI § 0",
+      "server": "hungary.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 406 | AI § 1",
+      "server": "cloud.mail-thba.com",
+      "server_port": 8443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 406 | AI (2) § 2",
+      "server": "cloud.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 406 | AI (3) § 3",
+      "server": "cloud.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 407 | AI, Fast, Test § 4",
+      "server": "test.country-40.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-tested.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/blog/comments",
+        "headers": {
+          "Host": "cdn-tested.eu-ffast.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 409 | AI, Social § 5",
+      "server": "country-ros.mail-thba.com",
+      "server_port": 10167,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 410 | AI, Social, Test § 6",
+      "server": "test.country-56.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 411 | AI, Social, Test § 7",
+      "server": "test.country-57.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 412 | AI, Test § 8",
+      "server": "test.country-32.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 413 | AI, Test § 9",
+      "server": "test.country-33.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 414 | AI, Test § 10",
+      "server": "test.country-34.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 415 | AI, Test § 11",
+      "server": "test.country-39.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 416 | AI, Test § 12",
+      "server": "test.country-48.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 417 | AI, Test § 13",
+      "server": "test.country-80.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 418 | AI, Test § 14",
+      "server": "test.country-35.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "io.ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 419 | AI, Test § 15",
+      "server": "test.country-36.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "io.ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 420 | AI, Test § 16",
+      "server": "test.country-95.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 421 | AI, Test § 17",
+      "server": "test.country-38.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 422 | AI, Test § 18",
+      "server": "test.country-41.mail-thba.com",
+      "server_port": 9443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 423 | AI, Test § 19",
+      "server": "test.country-42.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 424 | AI, Test § 20",
+      "server": "test.country-43.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 425 | AI, Test § 21",
+      "server": "test.country-85.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "io.ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 59 | Fast | 🚀 1078 Mbps § 22",
+      "server": "nlc3g.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 60 | Fast | 🚀 710 Mbps § 23",
+      "server": "nlnof11.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "help.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 79 | Fast, T2 | 🚀 796 Mbps § 24",
+      "server": "nltw2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 390 | Gaming § 25",
+      "server": "ltei.nerpvpn.net",
+      "server_port": 443,
+      "uuid": "7b0d58d9-1938-4fbf-b14d-ea64293d542f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM",
+          "short_id": "3decb73e"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇱 Албания 141 | Fast | 🚀 589 Mbps § 26",
+      "server": "alb.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇦 Босния 3 | NoAds, YouTube | 🚀 480 Mbps § 27",
+      "server": "ba.srv.oplcdn.top",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 Канада 4 | AI | 🚀 507 Mbps § 28",
+      "server": "camain.fgnconnection.life",
+      "server_port": 8443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "transport": {
+        "type": "ws",
+        "path": "/upload",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 Швейцария 5 | Fast | 🚀 612 Mbps § 29",
+      "server": "194.147.214.165",
+      "server_port": 48001,
+      "uuid": "0ce2c4e2-8886-70d6-7bc8-282e4a61ff98",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "travel.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RwlWEtxI1JlN_JYI_x5eyEPL9nh4yJY1cc07BWmuwFE",
+          "short_id": "a04c6a6200a097a0"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 382 | AI, Fast, Social, Test § 30",
+      "server": "testfast.country-1.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 233 | AI, Social | 🚀 262 Mbps § 31",
+      "server": "devdsmain.fgnconnection.life",
+      "server_port": 443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H46I56wuurV9oQyn2irq5ZleWz_FBpHWmWoqz1Hc-Qc",
+          "short_id": "53c8004fa34e8724"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 150 | Fast | 🚀 700 Mbps § 32",
+      "server": "dev.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "portal.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 149 | Fast | 🚀 763 Mbps (2) § 33",
+      "server": "detx1.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "portal.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 384 | Fast § 34",
+      "server": "150.241.79.14",
+      "server_port": 2443,
+      "uuid": "5f9ab636-85bb-4420-a497-f31cc60c57fe",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZMvMtsHKNd39qVM9CuPLMEXUL19ViL4Qqqk1y5mMjko",
+          "short_id": "a1b2c3d4"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TestChatGRPC",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 327 | Fast | 🚀 733 Mbps § 35",
+      "server": "150.241.79.13",
+      "server_port": 2443,
+      "uuid": "5f9ab636-85bb-4420-a497-f31cc60c57fe",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZMvMtsHKNd39qVM9CuPLMEXUL19ViL4Qqqk1y5mMjko",
+          "short_id": "a1b2c3d4"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TestChatGRPC",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 358 | Fast § 36",
+      "server": "80.66.72.113",
+      "server_port": 2443,
+      "uuid": "5f9ab636-85bb-4420-a497-f31cc60c57fe",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PZSCeoqKwEJ22bOlUk4uWLiUGShmvjHWDz-BfI3LlQ8",
+          "short_id": "a1b2c3d4"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TestChatGRPC",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 220 | Fast, NoAds, YouTube | 🚀 771 Mbps § 37",
+      "server": "spb.ru.srv.rucdn.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 221 | Fast, NoAds, YouTube | 🚀 668 Mbps § 38",
+      "server": "msk.ru.srv.rucdn.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 326 | Gaming | 🚀 809 Mbps § 39",
+      "server": "45.134.217.225",
+      "server_port": 443,
+      "uuid": "098401d7-c8db-4699-9ab5-d98771d09beb",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 223 | Gaming, Social § 40",
+      "server": "de14.fgnconnection.life",
+      "server_port": 443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H46I56wuurV9oQyn2irq5ZleWz_FBpHWmWoqz1Hc-Qc",
+          "short_id": "53c8004fa34e8724"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 222 | NoAds, YouTube | 🚀 645 Mbps § 41",
+      "server": "nsk.ru.srv.rucdn.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 157 | NoAds, YouTube | 🚀 518 Mbps § 42",
+      "server": "194.55.234.146",
+      "server_port": 48001,
+      "uuid": "0ce2c4e2-8886-70d6-7bc8-282e4a61ff98",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "travel.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RwlWEtxI1JlN_JYI_x5eyEPL9nh4yJY1cc07BWmuwFE",
+          "short_id": "a04c6a6200a097a0"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 Германия 331 | YouTube § 43",
+      "server": "78.159.131.46",
+      "server_port": 2443,
+      "uuid": "5f9ab636-85bb-4420-a497-f31cc60c57fe",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5IH4GxRn58hemmfY2nr_cETdTXwFC1PHngCLY2OiWz8",
+          "short_id": "a1b2c3d4"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TestChatGRPC",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 9 | AI | 🚀 680 Mbps § 44",
+      "server": "estmain.fgnconnection.life",
+      "server_port": 8443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "transport": {
+        "type": "ws",
+        "path": "/upload",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 252 | AI, Social, Test § 45",
+      "server": "test.country-16.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 253 | Fast, NoAds § 46",
+      "server": "est.top.subtrust.ru",
+      "server_port": 443,
+      "uuid": "ab942643-a3be-4773-9a60-0de1111f9e28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pOdL1l8cGGg7qnOPAbDcAIVOgA7O8f75XevxeYyaYCg",
+          "short_id": "cd11af"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 254 | Fast, NoAds, YouTube § 47",
+      "server": "ee2.srv.oplcdn.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 11 | Fast, Torrents | 🚀 672 Mbps § 48",
+      "server": "est01-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "f79448a30d"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 3 | Fast, Torrents | 🚀 862 Mbps § 49",
+      "server": "est-0001-xr.packet-drop-society.net",
+      "server_port": 443,
+      "uuid": "8be7b6ed-53a3-43df-93e4-6208f3e68ba7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
+          "short_id": "e499f276e7bd6420"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 248 | Gaming | 🚀 593 Mbps § 50",
+      "server": "69.12.83.19",
+      "server_port": 7443,
+      "uuid": "92f9cfbb-ab0b-47c0-a8b5-7f7679faa340",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "stackoverflow.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE",
+          "short_id": "111111"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 Эстония 10 | NoAds, YouTube | 🚀 874 Mbps § 51",
+      "server": "ee.srv.cdnopl.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 Испания 2 | AI, Fast | 🚀 570 Mbps § 52",
+      "server": "sp4.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 Испания 8 | AI, Social § 53",
+      "server": "194.87.133.111",
+      "server_port": 443,
+      "uuid": "38d93795-d116-4de0-bad9-c7ca5f6098c5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BcwI4K4lJ70ypESvST9HkyMts9PFEtNYFWPvfzcf0AU",
+          "short_id": "983a1875c8259550"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 103 | AI | 🚀 674 Mbps § 54",
+      "server": "fimain.fgnconnection.life",
+      "server_port": 443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H46I56wuurV9oQyn2irq5ZleWz_FBpHWmWoqz1Hc-Qc",
+          "short_id": "53c8004fa34e8724"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 281 | AI, Social, Test § 55",
+      "server": "test.country-18.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 5 | Fast | 🚀 714 Mbps § 56",
+      "server": "fing.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 6 | Fast | 🚀 827 Mbps § 57",
+      "server": "fin1.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 7 | Fast | 🚀 728 Mbps § 58",
+      "server": "fin2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 8 | Fast | 🚀 578 Mbps § 59",
+      "server": "fin3.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 9 | Fast | 🚀 668 Mbps § 60",
+      "server": "fin4.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 10 | Fast | 🚀 792 Mbps § 61",
+      "server": "fin5.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 11 | Fast | 🚀 791 Mbps § 62",
+      "server": "finv1.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 104 | Fast | 🚀 789 Mbps § 63",
+      "server": "144.31.7.199",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 105 | Fast | 🚀 771 Mbps § 64",
+      "server": "fi4.srv.cdnopl.link",
+      "server_port": 7443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "77.88.8.8",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 277 | Fast § 65",
+      "server": "fi3.nerpvpn.net",
+      "server_port": 443,
+      "uuid": "7b0d58d9-1938-4fbf-b14d-ea64293d542f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozone.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM",
+          "short_id": "189cfa69"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 283 | Fast, NoAds § 66",
+      "server": "fin.top.subtrust.ru",
+      "server_port": 443,
+      "uuid": "ab942643-a3be-4773-9a60-0de1111f9e28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KmfIliVemCZStxasoP-abL4iA4DyLKzexhpfFaXzUko",
+          "short_id": "fb"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 105 | Fast, NoAds, YouTube | 🚀 771 Mbps § 67",
+      "server": "fi4.srv.cdnopl.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 226 | Fast, NoAds, YouTube | 🚀 798 Mbps § 68",
+      "server": "fi.srv.cdnopl.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 105 | Fast, Test | 🚀 771 Mbps § 69",
+      "server": "fi4.srv.cdnopl.link",
+      "server_port": 6443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "debug.resolvertest.doh.umbrella.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 104 | Fast, Test | 🚀 789 Mbps § 70",
+      "server": "144.31.7.199",
+      "server_port": 6443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "debug.resolvertest.doh.umbrella.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 84 | Fast, Torrents | 🚀 755 Mbps § 71",
+      "server": "fin-0001-xr.packet-drop-society.net",
+      "server_port": 11443,
+      "uuid": "8be7b6ed-53a3-43df-93e4-6208f3e68ba7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
+          "short_id": "d3b13f31"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 Финляндия 227 | NoAds, YouTube | 🚀 890 Mbps § 72",
+      "server": "fi3.srv.cdnopl.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 Франция 27 | AI | 🚀 545 Mbps § 73",
+      "server": "frmain.fgnconnection.life",
+      "server_port": 8443,
+      "password": "�",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 Франция 41 | AI, Fast, Test § 74",
+      "server": "test.country-3.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "par.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 Франция 15 | Fast | 🚀 664 Mbps § 75",
+      "server": "frx.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 Франция 28 | Fast, Torrents § 76",
+      "server": "fr01-vlr01.tcp-reset-club.net",
+      "server_port": 14443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "f79448a30d"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 Англия 14 | AI, Fast, Test § 77",
+      "server": "test.country-4.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lon.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 Гонконг 6 | AI | 🚀 523 Mbps § 78",
+      "server": "gongmain.fgnconnection.life",
+      "server_port": 8443,
+      "password": "�",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 Израиль 2 | Fast | 🚀 836 Mbps § 79",
+      "server": "isr.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "portal.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 Япония 8 | Fast | 🚀 419 Mbps § 80",
+      "server": "jp3.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 Казахстан 17 | AI | 🚀 583 Mbps § 81",
+      "server": "kzmain.fgnconnection.life",
+      "server_port": 8443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "transport": {
+        "type": "ws",
+        "path": "/upload",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 Казахстан 41 | AI, Fast, Test § 82",
+      "server": "test.country-19.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇱🇻 Латвия 25 | AI | 🚀 782 Mbps § 83",
+      "server": "ltmain.fgnconnection.life",
+      "server_port": 8443,
+      "password": "�",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Латвия 8 | Fast | 🚀 868 Mbps § 84",
+      "server": "lv.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "portal.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Латвия 9 | Fast | 🚀 733 Mbps § 85",
+      "server": "lv2.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "help.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Латвия 10 | Fast | 🚀 847 Mbps § 86",
+      "server": "lv3.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "help.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Латвия 11 | Fast | 🚀 780 Mbps § 87",
+      "server": "lv4.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "downloads.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Латвия 12 | Fast | 🚀 639 Mbps § 88",
+      "server": "lv5.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "portal.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 Латвия 27 | Fast | 🚀 514 Mbps § 89",
+      "server": "188.253.17.126",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 373 | AI, Fast, Test § 90",
+      "server": "test.country-8.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ams.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 190 | AI, Social | 🚀 778 Mbps § 91",
+      "server": "nlmain.fgnconnection.life",
+      "server_port": 443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H46I56wuurV9oQyn2irq5ZleWz_FBpHWmWoqz1Hc-Qc",
+          "short_id": "53c8004fa34e8724"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 141 | Fast | 🚀 631 Mbps § 92",
+      "server": "nlg1.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 142 | Fast | 🚀 451 Mbps § 93",
+      "server": "nlg2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 145 | Fast | 🚀 589 Mbps § 94",
+      "server": "nltw1.fastdbn.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "services.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 233 | Fast, Gaming, IPv6 | 🚀 304 Mbps § 95",
+      "server": "nl03-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "f79448a30d"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 147 | Fast, IPv6 | 🚀 513 Mbps § 96",
+      "server": "nl2.fastdbn.com",
+      "server_port": 443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ftp.ipv6.debian.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 242 | Fast, Torrents, YouTube | 🚀 450 Mbps § 97",
+      "server": "nl02-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "31"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 243 | Fast, Torrents, YouTube | 🚀 586 Mbps § 98",
+      "server": "nl04-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "e499f276e7bd6420"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 150 | Fast, Torrents, YouTube | 🚀 847 Mbps § 99",
+      "server": "nld-0001-xr.packet-drop-society.net",
+      "server_port": 443,
+      "uuid": "8be7b6ed-53a3-43df-93e4-6208f3e68ba7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
+          "short_id": "8453e5fd9af927"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 Нидерланды 225 | NoAds, YouTube | 🚀 706 Mbps § 100",
+      "server": "165.140.119.117",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 141 | Fast | 🚀 895 Mbps § 101",
+      "server": "pln1.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 142 | Fast | 🚀 676 Mbps § 102",
+      "server": "pln2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 143 | Fast | 🚀 607 Mbps § 103",
+      "server": "pln3.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 144 | Fast | 🚀 694 Mbps § 104",
+      "server": "pln4.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 145 | Fast | 🚀 711 Mbps § 105",
+      "server": "pln5.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 146 | Fast | 🚀 665 Mbps § 106",
+      "server": "pln6.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 147 | Fast | 🚀 344 Mbps § 107",
+      "server": "pln7.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 148 | Fast | 🚀 783 Mbps § 108",
+      "server": "pln8.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 149 | Fast | 🚀 667 Mbps § 109",
+      "server": "pl.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 12 | Fast, IPv6, Torrents | 🚀 562 Mbps § 110",
+      "server": "che01-plr-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "8453e5fd9af927"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 267 | Fast, Torrents § 111",
+      "server": "pol01-vls01.tcp-reset-club.net",
+      "server_port": 20443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "f79448a30d"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 Польша 244 | Gaming | 🚀 495 Mbps § 112",
+      "server": "pol01-rblx01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "d3b13f31"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 196 | AI, NoAds, Social, YouTube | 🚀 769 Mbps § 113",
+      "server": "rumain.fgnconnection.life",
+      "server_port": 443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H46I56wuurV9oQyn2irq5ZleWz_FBpHWmWoqz1Hc-Qc",
+          "short_id": "53c8004fa34e8724"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 388 | AI, Social, Test § 114",
+      "server": "test.country-10.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 221 | Fast, NoAds, YouTube | 🚀 668 Mbps § 115",
+      "server": "msk.ru.srv.rucdn.link",
+      "server_port": 7443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "77.88.8.8",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 325 | Gaming | 🚀 804 Mbps § 116",
+      "server": "45.84.1.251",
+      "server_port": 443,
+      "uuid": "098401d7-c8db-4699-9ab5-d98771d09beb",
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 224 | Gaming, SS | 🚀 321 Mbps § 117",
+      "server": "ru-nl01-vlr01.tcp-reset-club.net",
+      "server_port": 17443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "e499f276e7bd6420"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 383 | NoAds, YouTube § 118",
+      "server": "ru2.nerpvpn.net",
+      "server_port": 443,
+      "uuid": "7b0d58d9-1938-4fbf-b14d-ea64293d542f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "store.steampowered.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DrWq_ysFaGPGgRFcHevMPoruwYMRXryW6i_cwE7CuCM",
+          "short_id": "dde66ef1"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 156 | NoAds, YouTube | 🚀 671 Mbps § 119",
+      "server": "ytn.sbrf-cdn342.ru",
+      "server_port": 4241,
+      "uuid": "92f9cfbb-ab0b-47c0-a8b5-7f7679faa340",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-22.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aCT3PdJs8nghWdaozo1O--_WKfV6K97cjIMlJSnZRQY",
+          "short_id": "111111"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 Россия 389 | SS, Torrents, YouTube § 120",
+      "server": "ru02-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "d3b13f31"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция 177 | AI | 🚀 717 Mbps § 121",
+      "server": "sw1.fgnconnection.life",
+      "server_port": 8443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "transport": {
+        "type": "ws",
+        "path": "/upload",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция 320 | AI, Fast, Gaming § 122",
+      "server": "game-sw.mail-thba.com",
+      "server_port": 8443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sto.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция 321 | AI, Fast, Gaming § 123",
+      "server": "game-sw2.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sto.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция 322 | AI, Social, Test § 124",
+      "server": "test.country-7.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 Швеция 225 | Fast, NoAds, YouTube | 🚀 821 Mbps § 125",
+      "server": "se.srv.cdnopl.link",
+      "server_port": 8443,
+      "uuid": "41f04585-11ed-4d24-a606-25eb8bccd326",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ign.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 Сингапур 2 | Fast | 🚀 897 Mbps § 126",
+      "server": "sing2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция 183 | AI | 🚀 535 Mbps § 127",
+      "server": "trmain.fgnconnection.life",
+      "server_port": 8443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "transport": {
+        "type": "ws",
+        "path": "/upload",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция 252 | AI, Fast, Gaming, Test § 128",
+      "server": "test.country-16.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "est.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 Турция 253 | AI, Fast, Test § 129",
+      "server": "test.country-17.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 181 | AI | 🚀 454 Mbps § 130",
+      "server": "us01-gmn-vlr02.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "31"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 171 | AI | 🚀 595 Mbps § 131",
+      "server": "usmain.fgnconnection.life",
+      "server_port": 8443,
+      "uuid": "784967b5-7264-4f70-ba9c-b26e0bc6b142",
+      "transport": {
+        "type": "ws",
+        "path": "/upload",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 180 | AI | 🚀 618 Mbps § 132",
+      "server": "usa-0001-gmn01.packet-drop-society.net",
+      "server_port": 443,
+      "uuid": "8be7b6ed-53a3-43df-93e4-6208f3e68ba7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws",
+          "short_id": "d3b13f31"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 372 | AI, Fast, Test § 133",
+      "server": "test.country-11.mail-thba.com",
+      "server_port": 443,
+      "uuid": "1520ece2-151b-4e82-b954-ddbf7c847e80",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lax.eu-ffast.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+          "short_id": "50"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 182 | AI, Torrents | 🚀 588 Mbps § 134",
+      "server": "us01-gmn-vlr01.tcp-reset-club.net",
+      "server_port": 443,
+      "uuid": "eee5cbcd-9dbe-434f-b669-8eaed97d9660",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "f79448a30d"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 5 | Fast | 🚀 714 Mbps § 135",
+      "server": "fing.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 148 | Fast | 🚀 671 Mbps § 136",
+      "server": "us2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 149 | Fast | 🚀 520 Mbps § 137",
+      "server": "usav2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 150 | Fast | 🚀 845 Mbps § 138",
+      "server": "kz.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 151 | Fast | 🚀 680 Mbps § 139",
+      "server": "kz2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 153 | Fast | 🚀 591 Mbps § 140",
+      "server": "kzsl.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 154 | Fast, NoAds, YouTube | 🚀 634 Mbps § 141",
+      "server": "youg.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 79 | Fast, NoAds, YouTube | 🚀 796 Mbps § 142",
+      "server": "nltw2.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 155 | Fast, NoAds, YouTube | 🚀 782 Mbps § 143",
+      "server": "pkyooug2.fastlydeb.com",
+      "server_port": 5001,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "services.3cx.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "downloads.3cx.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 156 | Fast, Torrents, YouTube | 🚀 716 Mbps § 144",
+      "server": "tf.fastdbn.com",
+      "server_port": 8443,
+      "uuid": "ea695857-5e8a-4a4e-b7f0-902b3274c1f4",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "12UHjWCU_BNIkRmxt-6QKAuVuSIFzoS2jkN1BIMzGjM"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.com",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 США 157 | NoAds, YouTube | 🚀 518 Mbps § 145",
+      "server": "194.55.234.146",
+      "server_port": 47001,
+      "uuid": "0ce2c4e2-8886-70d6-7bc8-282e4a61ff98",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RwlWEtxI1JlN_JYI_x5eyEPL9nh4yJY1cc07BWmuwFE",
+          "short_id": "6756987a6441a37a"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "10-30",
+        "sleep": "2-8"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "rule_set": [
+          "geoip-ru",
+          "geosite-ru"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-ru",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geoip-ru.srs",
+        "update_interval": "120h0m0s"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-ru",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/hiddify/hiddify-geo/rule-set/country/geosite-ru.srs",
+        "update_interval": "120h0m0s"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:16756",
+      "secret": "blpQb4PfPjzMd6X6"
+    }
+  }
+}
